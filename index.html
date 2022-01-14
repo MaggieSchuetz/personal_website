@@ -6,42 +6,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magdalena Schütz</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/d7215b69a8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <h1>Magdalena Schütz</h1>
-    <nav>
-      <a href="#contact">Contact</a>
-      <a href="#biography">Biography</a>
-    </nav>
+      <nav class="main-nav">
+        <a class="button" href="#biography">Biography</a>
+        <a class="button" href="#education">Education</a>
+        <a class="button" href="#skills">Skills</a>
+        <a class="button" href="#contact">Contact</a>
+      </nav>
   </header>
+
   <figure>
-    <img src="https://source.unsplash.com/random/600x300" alt="">
-    <figcaption>Random Image</figcaption>
+    <img src="https://images.unsplash.com/photo-1526675849333-144a81e4670d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80" alt="" width="300" height="200">
+    <figcaption>Hello and welcome!</figcaption>
   </figure> 
 
-  <section>
-    <h2>Social Media</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/dr-magdalena-sch%C3%BCtz-625a781a6">LinkedIn</a></li>
-      <li><a href="https://www.researchgate.net/profile/Magdalena-Schuetz">ResearchGate</a></li>
-    </ul>
+  <section class="boxes">
+    <div id="biography">
+        <h2>Biography</h2>
+          <p>As evident from my career so far, I am someone who is curious and likes to learn new things. I started out as a psychology-student, but quickly fell in love with the human brain. After learning some MATLAB and Python during my Ph.D. (neuroscience involves a surprising amount of coding!), I am currently attending a web development bootcampt to broaden my horizons further.</p>
+    </div>
+
+    <div id="education">
+        <h2>Education</h2>
+          <ul> 
+            <li>2017 - 2021:<br>Ph.D. in psychology / neuroscience</li>
+            <li>2013 - 2016:<br>M.Sc. in psychology</li>
+            <li>2010 - 2013:<br>B.Sc. in psychology</li>
+        </ul>
+    </div>
+
+    <div id="skills">
+       <h2>Skills</h2>
+         <ul>
+           <li>HTML</li>
+           <li>.git</li>
+           <li>CSS</li>
+           <li>Python</li>
+           <li>MATLAB</li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h2>Contact</h2>
+          <h3>Phone:</h3>
+            <p>01234/56789 </p>
+          <h3>Mail: </h3>
+            <p>m.schuetz@outlook.de</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Selected Publications</h2>
-    <ul>
-      <li><a href="https://doi.org/10.1016/j.rasd.2020.101666">Communicative Intentions in Autism</a></li>
-      <li><a href="https://doi.org/10.1007/s10803-021-05358-1">Intention Attribution in Autism</a></li>
-      <li><a href="https://doi.org/10.1007/s10548-020-00765-6">Significance of Beta-Band Oscillations in Autism</a></li>
-    </ul>
-  </section>
-
-<section id="contact"></section>
-<h2>Contact</h2>
-<section id="biography"></section>
-<h2>Biography</h2>
+  <footer>
+    <h3>Or find me on...</h3>  
+      <div class="main-nav"><a href="https://www.linkedin.com/in/dr-magdalena-sch%C3%BCtz-625a781a6" class="fab fa-linkedin fa-2x icon"></a>
+        <a href="https://github.com/MaggieSchuetz" class="fab fa-github fa-2x icon"></a>
+        <a href="https://codepen.io/MaggieSchuetz" class="fab fa-codepen fa-2x icon"></a>
+        <a href="https://www.researchgate.net/profile/Magdalena-Schuetz" class="fab fa-researchgate fa-2x icon"></a>
+      </div>  
+  </footer>
 </body>
 
 </html>
