@@ -22,34 +22,34 @@ header {
 }
 
 .container {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .round {
-display: flex;
-border-radius: 50%;
-margin: 13px 13px;
-min-height: 150; /* If I set this lower, the proportions won't be correct anymore, but if I leave it like this, it pushes the text off */
-min-width: 150;
-max-height: 200;
-max-width: 200;
-flex: 1 1 0;
+  display: flex;
+  border-radius: 50%;
+  margin: 13px 13px;
+  min-height: 150; /* If I set this lower, the proportions won't be correct anymore, but if I leave it like this, it pushes the text off */
+  min-width: 150;
+  max-height: 200;
+  max-width: 200;
+  flex: 1 1 0;
 }
 
 h1 {
-font-size: 250%; /*wanted to make it fluid with font-size: calc(16px + 6 * ((100vw - 320px) / 680)); did not work */
-font-family: 'Brush Script MT', cursive;
-text-align: right;
-padding-right: 13px;
-display: flex;
-justify-content: flex-end;
-align-items: flex-end;
+  font-size: 250%; /*wanted to make it fluid with font-size: calc(16px + 6 * ((100vw - 320px) / 680)); did not work */
+  font-family: 'Brush Script MT', cursive;
+  text-align: right;
+  padding-right: 13px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .sort {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 body {
@@ -60,11 +60,15 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-img {
-  display:block;
+figure {
   width: 100%;
   height: auto;
-  margin: 0
+  margin: 0;
+}
+img {
+  width: 100%; /*why is my image not as wide as the page? */
+  height: auto;
+  margin: 0;
 }
 
 nav{
@@ -79,7 +83,9 @@ nav > * {
   flex: 1 1 0;
 }
 
-.button {
+/*both button and boxes still wrap unevenly, did we solve that yet?*/
+
+.button > * {
   background: indianred;
   color: black;
   text-decoration: none;
@@ -89,44 +95,49 @@ nav > * {
 }
 
 .boxes {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-justify-content: center;
-padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
 }
 
 .boxes > * {
-flex-grow: 1;
-flex-basis: 0;
-padding: 5%;
-margin-bottom: 1rem;
-background: #fff;
--webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
-border-radius: 25px;
-min-width: 200px;
-min-height: max-content;
-box-sizing: content-box;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 5%;
+  margin-bottom: 1rem;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  min-width: 200px;
+  min-height: max-content;
+  box-sizing: content-box;
 }
 
 li {
-list-style-type: none;
-margin: 0;
-padding: 0;
-text-align: center;
-margin-left: -30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-left: -30px;
+}
+
+.contact > * {
+  text-decoration: none;
+  color: black;
 }
 
 .icon {
-color: black;
-margin: 20px;
-text-decoration: none;
+  color: black;
+  margin: 20px;
+  text-decoration: none;
 }
 
 footer {  
-background-color: indianred;
-padding: 2px;
+  background-color: indianred;
+  padding: 2px;
 }
 
 
