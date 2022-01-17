@@ -1,125 +1,17 @@
-* { 
-  box-sizing: border-box;
-}
-
-main {
-  display: block;
-  background: #fff;
-  margin: auto;
-  margin-top: 0;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-header {
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-  margin: auto;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.round {
-  display: flex;
-  border-radius: 50%;
-  margin: 13px 13px;
-  min-height: 150; /* If I set this lower, the proportions won't be correct anymore, but if I leave it like this, it pushes the text off */
-  min-width: 150;
-  max-height: 200;
-  max-width: 200;
-  flex: 1 1 0;
-}
-
-h1 {
-  font-size: 250%; /*wanted to make it fluid with font-size: calc(16px + 6 * ((100vw - 320px) / 680)); did not work */
-  font-family: 'Brush Script MT', cursive;
-  text-align: right;
-  padding-right: 13px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.sort {
-  display: flex;
-  justify-content: space-between;
-}
-
-body {
-  background: papayawhip;
-  margin: 0;
-  text-align: center;
-  font-size: 16;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-figure {
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-img {
-  width: 100%; 
-  height: auto;
-  margin: 0;
-}
-
-nav{
-  display: flex; 
-  flex-wrap: wrap;
-  padding: 10px;
-  margin: 10 px;
-  gap: 10px;
-}
-
-nav > * {
-  flex: 1 1 0;
-}
-
-/*both button and boxes still wrap unevenly, did we solve that yet?*/
-
-.button > * {
-  background: indianred;
-  color: black;
-  text-decoration: none;
-  padding: 4px 20px;
-  text-align: center;
-  border-radius: 6px;
-}
-
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  padding: 10px;
-}
-
-.boxes > * {
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 5%;
-  margin-bottom: 1rem;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 25px;
-  min-width: 200px;
-  min-height: max-content;
-  box-sizing: content-box;
-}
+@import url(./colors.css);
+@import url(./base.css);
+@import url(./header.css);
+@import url(./figure.css);
+@import url(./nav.css);
+@import url(./lists.css);
+@import url(./box-elements.css);
+@import url(./link-style.css);
+@import url(./icon.css);
+@import url(./footer.css);
 
 /* Just leaving this out of interest: 
 - I know I can define a background image in HTML, but then it won't cover the entire box anymore, how do I do that?
 - If I decrease the opacity for this item, everything that layers over it, will become opaque as well, how can that be fixed?
-
 
 .skills {
   background-image: url(images/Screenshot\ 2022-01-16\ at\ 14-19-54\ pencils-389995_1280.png);
@@ -131,30 +23,4 @@ nav > * {
   background-position:center;
   opacity: 0.6;
 }
-*/ 
-
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-left: -30px;
-}
-
-.contact > * {
-  text-decoration: none;
-  color: black;
-}
-
-.icon {
-  color: black;
-  margin: 20px;
-  text-decoration: none;
-}
-
-footer {  
-  background-color: indianred;
-  padding: 2px;
-}
-
-
+*/
