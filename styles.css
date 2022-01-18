@@ -8,19 +8,3 @@
 @import url(./link-style.css);
 @import url(./icon.css);
 @import url(./footer.css);
-
-/* Just leaving this out of interest: 
-- I know I can define a background image in HTML, but then it won't cover the entire box anymore, how do I do that?
-- If I decrease the opacity for this item, everything that layers over it, will become opaque as well, how can that be fixed?
-
-.skills {
-  background-image: url(images/Screenshot\ 2022-01-16\ at\ 14-19-54\ pencils-389995_1280.png);
-  background-repeat: no-repeat;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position:center;
-  opacity: 0.6;
-}
-*/

@@ -1,6 +1,6 @@
 header {
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 12px 0px var(--color-shadow);
+  background: var(--color-header);
   backdrop-filter: blur(5px);
   margin: auto;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;

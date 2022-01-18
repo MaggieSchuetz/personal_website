@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10 px;
+  gap: 10px;
+}
+
+nav > * {
+  flex: 1 1 0;
+}
+
+/*both button and boxes still wrap unevenly, did we solve that yet?*/
+
+.nav__button > * {
+  background: var(--color-elements);
+  color: var(--color-black);
+  text-decoration: none;
+  padding: 4px 20px;
+  text-align: center;
+  border-radius: 6px;
+}
