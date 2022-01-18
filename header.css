@@ -1,0 +1,31 @@
+header {
+  box-shadow: 0px 0px 12px 0px var(--color-shadow);
+  background: var(--color-header);
+  backdrop-filter: blur(5px);
+  margin: auto;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__image {
+  display: flex;
+  border-radius: 50%;
+  margin: 13px 13px;
+  min-height: 150; /* If I set this lower, the proportions won't be correct anymore, but if I leave it like this, it pushes the text off */
+  min-width: 150;
+  max-height: 200;
+  max-width: 200;
+  flex: 1 1 0;
+}
+
+.header__sort {
+  display: flex;
+  justify-content: space-between;
+}
